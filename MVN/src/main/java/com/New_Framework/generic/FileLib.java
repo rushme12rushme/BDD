@@ -16,7 +16,7 @@ public class FileLib {
 	public String getPropertyFileData(String key) throws IOException {
 		//Generic method to read data from property file
 		FileInputStream fis=new FileInputStream("./data/CommonData.property");
-		Properties p = new Properties();	
+		Properties p = new Properties();
 		p.load(fis);
 		String data=p.getProperty(key);
 		return data;
