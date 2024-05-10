@@ -53,6 +53,7 @@ public void CreateCampaign()  throws EncryptedDocumentException, InvalidFormatEx
 	String exp=al.get(0);
 	Assert.assertEquals(actual, exp);
 	Reporter.log("CreateCampaign",true);
+	Reporter.log("Test Complete",true);
 }
 	
 }
