@@ -1,4 +1,5 @@
 package com.New_Framework.testscript;
+import com.New_Framework.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -17,12 +18,12 @@ import com.New_Framework.POM.HomePage;
 import com.New_Framework.generic.Baseclass;
 import com.New_Framework.generic.FileLib;
 
-public class CampaignModule {
+public class CampaignModule extends Baseclass{
 @Test
-public void CreateCampaign() throws EncryptedDocumentException, InvalidFormatException, IOException
+public void CreateCampaign()  throws EncryptedDocumentException, InvalidFormatException, IOException
 {
 	System.out.println("Create Module");
-	 WebDriver driver = Baseclass.driver;
+	WebDriver driver = Baseclass.driver;
 	HomePage h=new HomePage(driver);
 	h.setCampaignsTab();
 	CampaignListPage cl=new CampaignListPage(driver);
